@@ -81,6 +81,7 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 
 
 <div id='apendice-javascript'/> 
+
 ## Seção 15: Apêndice A: Javascript Moderno (ES6)
 ### O que é JS ES6?
 * É  uma versão mais nova de JS que trouxe diversas funcionalidades;
