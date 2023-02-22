@@ -19,6 +19,7 @@ Repository with studies to understand how to work with Typescript
 15. [Apêndice A: Revisão Javascript Moderno](#apendice-javascript)
 
 <div id='introducao'/> 
+
 ## Seção 1: Introdução 
 ### O que é Typescript
 - Typescript é um superset para a linguagem de Javascript
@@ -51,6 +52,7 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 
 
 <div id='fundamentos'/> 
+
 ## Seção 2: Fundamentos do Typescript
 ### O que são tipos? 
 - Em Typescript a principal função é determinar tipos para os dados 
