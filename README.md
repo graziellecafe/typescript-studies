@@ -4,7 +4,7 @@ Repository with studies to understand how to work with Typescript
 
 1. [Seção 1: Introdução](#introducao) 
 2. [Seção 2: Fundamentos do Typescript](#fundamentos)
-3. [Seção 3: Avançando em Tipos]()
+3. [Seção 3: Avançando em Tipos](#avancando-em-ts)
 4. [Seção 4: Narrowing - Verificação de tipos e de dados]()
 5. [Seção 5: Funções com Typescript]()
 6. [Seção 6: Entendendo os Object Types]()
@@ -77,6 +77,82 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 - Annotation é quando definimos o tipo de um dado manualmente
 - Inference é quando o TS identifica e define o tipo de dados para nós 
 
+<div id='avancando-em-ts'/> 
+
+## Seção 3: Avançando em Tipos
+### Arrays
+- Podemos especificar um array como tipo também 
+- Se temos um array de números: ```number[]```
+- Se é um array de string: ```string[]```
+- Isso acontece pois geralmente os arrays possuem apenas um único tipo de dado entre seus itens 
+- Podemos utilizar também o modo Array<number
+
+### O tipo Any 
+- O any transmite ao TS que qualquer tipo satisfaz a variável 
+- Devemos evitar ao máximo este tipo, pois vai contra os princípios do Javascript
+- Dois casos de uso: o tipo do dado realmente não importa e arrays com dados de múltiplos tipos 
+
+### Tipo de parâmetro de funções 
+- Podemos definir o tipo de cada parâmetro de uma função 
+- Assim adicionamos o seu uso correto 
+- A sintaxe é 
+```javascript
+    minhaFuncao (nome: string) {
+        // body da funcao 
+    }
+```
+- Agora podemos passar o parâmetro nome, apenas como texto
+
+### Propriedades opcionais 
+- Nem sempre os objetos possuem todas as propriedades que poderiam possuir 
+- Por isso temos as propriedades opcionais 
+- Para ter esse resultado devemos colocar uma interrogação: 
+``` 
+{
+    nome: string, 
+    sobrenome?: string
+}
+```
+
+### Union type 
+- O union type é uma alternativa melhor do que o any 
+- Onde podemos determinar dois tipos para um dado 
+- A sintaxe ```number | string ```
+
+
+### Type Alias 
+```javascript
+    type ID = string | number; 
+
+    function showId(id: ID) {
+        console.log(`O id do usuário é: ${id}`)
+    }
+```
+
+### Introdução ás interfaces
+- Uma outra maneira de nomear um tipo de objeto 
+- Podemos determinar um nome para o tipo 
+- Também podemos escolher quais as propriedades e seus tipos
+```javascript
+    interface Point {
+        x: number, 
+        y: number, 
+        z: number
+    }
+
+    function showCords(obj: Point) {
+        console.log(obj)
+    }
+```
+
+### Literals types
+```javascript
+    function showDirection(direction: "left" | "right" | "center") {
+        console.log(`A direção é ${direction}`);
+    }
+
+    showDirection("left")
+```
 
 
 
