@@ -169,5 +169,29 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 * E a `const` que é uma forma de declarar constantes; 
 * O grande diferencial é o escopo de blocos, não temos mais variávels sendo `vazadas` para outros escopos por causa do mesmo nome.
 
+### Arrow functions
+* A arrow function 'e um recurso para criar funcoes de forma mais simples
+* Mas ela nao funciona exatamente como uma function em todos os aspectos
+* O this da arrow function 'e relacionado aoelemento pai de quem est'a a executando 
+
+### Filter
+* O filter é um método de array para filtrar dados, baseado em alguma condicão que estabalecemos
+* Isso nos dá um array com apenas os elementos que queremos, de forma performática
+* Há vários métodos de array importantes no ES6, este é um deles 
+```javascript
+const array = [1, 2, 3, 4, 5]; 
+const highNumbers = array.filter((number) => {
+    if (number >= 3) {
+        return number; 
+    }
+})
+
+console.log(highNumbers);
+```
+
+### Map 
+* O map é um método de array também, que percorre todos os elementos 
+* Quando utilizamos map estamos querendo modificar os dados do array 
+
 ## Seção 16: Apêndice B: Introdução as APIs 
 ## Seção 17: Conclusão dos cursos e próximos passos 
