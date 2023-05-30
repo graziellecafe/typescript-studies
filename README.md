@@ -20,6 +20,7 @@ Repository with studies to understand how to work with Typescript
 
 <div id='introducao'/> 
 
+
 ## Seção 1: Introdução 
 ### O que é Typescript
 - Typescript é um superset para a linguagem de Javascript
@@ -165,17 +166,17 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 * Também agilizam muito o desenvolvimento de JS Puro; 
 
 ### Variáveis como `let` e `const`
-* A `let` que é semelhante ao var, podemos alterar valores; 
+* A `let` que é semelhante ao `var`, podemos alterar valores; 
 * E a `const` que é uma forma de declarar constantes; 
 * O grande diferencial é o escopo de blocos, não temos mais variávels sendo `vazadas` para outros escopos por causa do mesmo nome.
 
 ### Arrow functions
-* A arrow function 'e um recurso para criar funcoes de forma mais simples
+* A arrow function é um recurso para criar funcoes de forma mais simples
 * Mas ela nao funciona exatamente como uma function em todos os aspectos
-* O this da arrow function 'e relacionado aoelemento pai de quem est'a a executando 
+* O this da arrow function é relacionado ao elemento pai de quem está a executando 
 
 ### Filter
-* O filter é um método de array para filtrar dados, baseado em alguma condicão que estabalecemos
+* O filter é um método de array para filtrar dados, baseado em alguma condição que estabalecemos
 * Isso nos dá um array com apenas os elementos que queremos, de forma performática
 * Há vários métodos de array importantes no ES6, este é um deles 
 ```javascript
@@ -193,5 +194,23 @@ console.log(highNumbers);
 * O map é um método de array também, que percorre todos os elementos 
 * Quando utilizamos map estamos querendo modificar os dados do array 
 
-## Seção 16: Apêndice B: Introdução as APIs 
-## Seção 17: Conclusão dos cursos e próximos passos 
+### Destructuring 
+- O destructuring é um recurso que pode ser utilizado em em arrays e objetos 
+- A ideia é transformar os itens de um desses dados em variáveis 
+- Simplificando a declaração de n variáveis para apenas 1 linha 
+
+### Spread operator 
+- O spread pode ser utilizado também em arrays e objetos 
+- Utilizamos para constituir novos valores desdes dados em outros arrays 
+- Ou seja, podemos unir vários arrays de maneira simples ou adicionar valores de um objeto a outro 
+
+### Classes 
+- As classes são recursos fundamentais para programar com orientação a objetos 
+- Agora o JS tem este recursos implementados onde temos acesso a: constructor, propriedades, métodos e mais
+- Antes as classes eram baseadas em funções (constructor functions)
+
+### Herança 
+- Podemos criar herança de classes com ES6 também 
+- Utilizamos a palavra extends para referir a classe herdade 
+- E as propriedades que utilizamos dela, devem ser enviadas via função super 
+
