@@ -34,6 +34,7 @@ Repository with studies to understand how to work with Typescript
 - Provê novas funcionalidades a JS, como interfaces
 - Com TS podemos verificar os erros antes da execução do código, ou seja, no desenvolvimento 
 - Deixa JS mais explícito, diminuindo a quantidade de bugs
+- Por estes e outros motivos perdemos menos tempo com debug 
 
 
 ### O que é Node.JS
@@ -43,14 +44,28 @@ Isso significa que com o Node.js é possível criar aplicações Javascript para
 
 A principal característica que diferencia o Node.JS de outras tecnologias, como PHP, Java, C#, é o fato de sua execução ser single-thread. Ou seja, apenas uma thread é responsável por executar o código Javascript da aplicação, enquanto que nas outras linguagens a execução é multi-thread.
 
+Como usar: digitar node no terminal
 
 ### Instalando o Typescript
 - Para instalar o Typescript vamos utilizar o npm 
 - O nome do pacote é typescript
 - E vamos adicionar de forma global com a **flag -g** 
 - A partir da instalação temos como executar/compilar TS em qualquer local da nossa máquina com o comando **tsc**
-- ``npm install typescript -g``
+- `npm -v`
+- ``sudo npm install typescript -g``
+-  `tsc -v`
 
+Para rodar o arquivo ts: `tsc index.ts`
+
+### Primeiro programa com ts 
+```js
+// Desafio 1 
+function soma (a: number, b: number) {
+    return a + b; 
+}
+
+console.log(soma(5,6)); 
+```
 
 <div id='fundamentos'/> 
 
@@ -64,7 +79,7 @@ A principal característica que diferencia o Node.JS de outras tecnologias, como
 
 ### Tipos primitivos
 - Há diversos tipos em TS, vamos começar pelos primitivos
-- Quais são: number, string e boolean 
+- Quais são: **number, string e boolean** 
 - Todos estes são inseridos com letras minúsculas 
 
 ### Conhecendo o number 
