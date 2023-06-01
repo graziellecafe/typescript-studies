@@ -3,6 +3,10 @@ let x: number = 10;
 console.log(x); 
 console.log(typeof x); 
 
+let y: number = 15.8473847; 
+console.log(typeof y); 
+console.log(y.toPrecision(3)); 
+
 // 2 - string
 const firstName: string = "Grazielle";
 console.log(firstName); 
